@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web;
-using Microsoft.AspNetCore.Mvc;
+using System.Web.Mvc;
 using Treehouse.FitnessFrog.Data;
 using Treehouse.FitnessFrog.Models;
 
@@ -30,6 +30,7 @@ namespace Treehouse.FitnessFrog.Controllers
                 .Count();
 
             ViewBag.TotalActivity = totalActivity;
+            //Looping and displaying the activities
             ViewBag.AverageDailyActivity = (totalActivity / (double)numberOfActiveDays);
 
             return View(entries);
@@ -40,9 +41,9 @@ namespace Treehouse.FitnessFrog.Controllers
             var entry = new Entry()
             {
                 Date = DateTime.Today,
-
-
             };
+            //Looping and displaying the activities
+            ViewBag.ActivitiesSelectListItems = new SelectList(Data.Data.Activities, "Id", "Name");
             return View(entry);
         }
         [ActionName("Add"), HttpPost]
@@ -54,6 +55,7 @@ namespace Treehouse.FitnessFrog.Controllers
                 return RedirectToAction("Index");
                
             }
+            ViewBag.ActivitiesSelectListItems = new SelectList(Data.Data.Activities, "Id", "Name");
             return View(entry);
         }
 
