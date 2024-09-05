@@ -37,3 +37,4 @@ C:\Users\strad\OneDrive\Desktop\school\contemporary\practice\TreehouseFitnessFro
 C:\Users\strad\OneDrive\Desktop\school\contemporary\practice\TreehouseFitnessFrog\TreehouseFitnessFrog\obj\Debug\net6.0\TreehouseFitnessFrog.pdb
 C:\Users\strad\OneDrive\Desktop\school\contemporary\practice\TreehouseFitnessFrog\TreehouseFitnessFrog\obj\Debug\net6.0\TreehouseFitnessFrog.genruntimeconfig.cache
 C:\Users\strad\OneDrive\Desktop\school\contemporary\practice\TreehouseFitnessFrog\TreehouseFitnessFrog\obj\Debug\net6.0\ref\TreehouseFitnessFrog.dll
+C:\Users\strad\OneDrive\Desktop\school\contemporary\practice\TreehouseFitnessFrog\TreehouseFitnessFrog\obj\Debug\net6.0\TreehouseFitnessFrog.sourcelink.json
