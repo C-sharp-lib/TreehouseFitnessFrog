@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TreehouseFitnessFrog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bceaef572e28dc75eef549ad0312fab51e26af06")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86a78484879cccebc8977628ace7ebcf0686d6a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("TreehouseFitnessFrog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TreehouseFitnessFrog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
