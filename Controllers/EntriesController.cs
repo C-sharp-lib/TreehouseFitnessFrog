@@ -21,13 +21,9 @@ namespace Treehouse.FitnessFrog.Controllers
         public ActionResult Index()
         {
             List<Entry> entries = _entriesRepository.GetEntries();
-
-            // Calculate the total activity.
             double totalActivity = entries
                 .Where(e => e.Exclude == false)
                 .Sum(e => e.Duration);
-
-            // Determine the number of days that have entries.
             int numberOfActiveDays = entries
                 .Select(e => e.Date)
                 .Distinct()
@@ -41,14 +37,24 @@ namespace Treehouse.FitnessFrog.Controllers
 
         public ActionResult Add()
         {
-            
-            return View();
+            var entry = new Entry()
+            {
+                Date = DateTime.Today,
+
+
+            };
+            return View(entry);
         }
         [ActionName("Add"), HttpPost]
-        public ActionResult Add(
-            DateTime? date, int? activityId, double? duration, Entry.IntensityLevel? intensity, bool? exclude, string notes) 
+        public ActionResult Add(Entry entry) 
         {
-            return View();
+            if (ModelState.IsValid) 
+            { 
+                _entriesRepository.AddEntry(entry);
+                return RedirectToAction("Index");
+               
+            }
+            return View(entry);
         }
 
         public ActionResult Edit(int? id)
